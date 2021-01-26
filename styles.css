@@ -1,0 +1,102 @@
+
+body {
+  /* position: relative; */
+}
+
+/* top */
+#top{
+  margin-bottom: 150px;
+}
+.bgimg {
+  position: relative;
+  width: 100%;
+  filter: brightness(65%);
+}
+.topbar {
+  position: absolute;
+  top: 0;
+  padding: 3% 11% 7%;
+}
+.navbar{
+  font-weight: 600;
+}
+.heading{
+  position: relative;
+  font-size: 5rem;
+  color: white;
+  top: 115px;
+  left: 10px;
+  width: 58%;
+  font-weight: lighter;
+  padding-left: 10px;
+  padding-top: 10PX;
+  line-height: 1;
+  letter-spacing: 4px;
+  border: 3px solid white;
+}
+
+/* middle-top */
+.mid-top {
+  position: relative;
+  margin-bottom: 150px;
+  padding-bottom: 50px;
+}
+.midimg {
+  margin: auto auto auto 200px;
+}
+.midpost {
+  position: absolute;
+  padding: 70px 30px 30px 50px;
+  width: 30%;
+  background: white;
+  bottom: 10px;
+  right: 220px;
+}
+.midhead {
+  font-weight: 200;
+  text-align: center;
+}
+.midtext {
+  font-size: 12px;
+  padding-left: 40px;
+}
+/* middle-bottom */
+.headerr{
+  position: relative;
+}
+.midbtm {
+  position: relative;
+  /* left: 30px; */
+  color: black;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+}
+.butn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: inline-block;
+  border-radius: 0;
+  width: 170px;
+  letter-spacing: 3px;
+  height: 50px;
+}
+.image-tab {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 20px;
+}
+.imge {
+  position: relative;
+}
+.image-text {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: left;
+  width: 70%;
+  left: 20px;
+}
