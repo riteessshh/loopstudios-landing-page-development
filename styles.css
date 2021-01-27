@@ -229,6 +229,7 @@ body {
 
   body{
     overflow-x: hidden;
+    position: relative;
   }
   .logoimg {
     width: 170px;
@@ -237,19 +238,17 @@ body {
   .bar{
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    margin-top: 20px;
   }
   .menu{
     display: block;
     position: absolute;
     right: 0;
     top: 6px;
-
-    text-align: right;
   }
   .dropdown{
     position: relative;
-    display: inline-block;
+    display: block;
   }
   .content{
     font-family: 'Alata', sans-serif;
@@ -269,6 +268,12 @@ body {
   .show {
     display:block;
   }
+  .closing{
+    display: block;
+    position: absolute;
+    right: 10px;
+    margin-top: 10px;
+  }
 
   .bgimg {
     display: none;
@@ -280,7 +285,7 @@ body {
     filter: brightness(65%);
   }
   .logotop{
-    display: inline;
+    display: inline-block;
   }
 
   .heading{
@@ -415,11 +420,20 @@ body {
 
   body{
     overflow-x: hidden;
+    position: relative;
   }
 
   /* menu */
   .menu{
     display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .logotop{
+    position: relative;
+    display: block;
+    top: 22px;
   }
   .dropdown{
     position: relative;
@@ -439,9 +453,19 @@ body {
   }
   .items{
     display: none;
+    /* position: fixed; */
+  }
+  .ends{
+    padding-bottom: 20px;
   }
   .show {
     display:block;
+  }
+  .closing{
+    display: block;
+    position: absolute;
+    right: 10px;
+    margin-top: 10px;
   }
 
   .bgimg {
@@ -467,7 +491,7 @@ body {
     margin: auto;
     font-size: 2.2rem;
     color: white;
-    top: 190px;
+    top: 170px;
     width: auto;
     font-weight: lighter;
     padding-left: 10px;
@@ -494,11 +518,13 @@ body {
   }
   .midpost {
     position: static;
-    padding: 70px 30px 30px 50px;
+    display: block;
+    margin: 30px auto 10px;
+    padding: 10px;
     width: auto;
     background: white;
-    bottom: 10px;
-    right: 190px;
+    /* bottom: 10px;
+    right: 190px; */
   }
   .midhead {
     font-weight: 200;
@@ -530,9 +556,6 @@ body {
   .buttn {
     display: block;
     position: relative;
-    /* top: 15px;
-    right: 20px; */
-    /* display: inline-block; */
     border-radius: 0;
     width: 170px;
     margin: 10px auto;
