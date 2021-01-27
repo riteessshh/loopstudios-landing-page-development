@@ -166,6 +166,22 @@ body {
 
 @media (max-width:1201px) {
 
+  .bar{
+    display: grid;
+    grid-template-columns: 600px 1fr;
+  }
+  .logotop{
+    display: inline;
+  }
+  .content{
+    font-family: 'Alata', sans-serif;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* grid-row-gap: 20px; */
+    text-align: center;
+  }
+
   .heading{
     position: relative;
     font-size: 3.5rem;
@@ -220,6 +236,22 @@ body {
     filter: brightness(65%);
   }
 
+  .bar{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .logotop{
+    display: inline;
+  }
+  .content{
+    font-family: 'Alata', sans-serif;
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 20px;
+    text-align: center;
+  }
+
   .heading{
     position: relative;
     display: block;
@@ -236,6 +268,10 @@ body {
     line-height: 1.1;
     letter-spacing: 2px;
     border: 3px solid white;
+  }
+  .mid-top{
+    padding-bottom: 10px;
+    margin-bottom: 60px;
   }
 
   .midimg {
@@ -272,9 +308,10 @@ body {
     position: relative;
     /* left: 30px; */
     color: black;
-    display: inline-block;
-    font-size: 3rem;
+    display: block;
+    font-size: 2rem;
     font-weight: 300;
+    text-align: center;
   }
   .butn {
     display: none;
@@ -294,7 +331,7 @@ body {
   .image-tab {
     display: grid;
     grid-template-columns: auto;
-    grid-row-gap: 20px;
+    grid-row-gap: 12px;
     margin-bottom: 50px;
   }
   .imgge {
@@ -311,10 +348,10 @@ body {
     position: absolute;
     bottom: 20px;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 300;
     text-align: left;
-    width: 70%;
+    width: 50%;
     left: 20px;
   }
 
@@ -363,6 +400,13 @@ body {
     display: block;
     width: 100%;
     filter: brightness(65%);
+  }
+  .bar{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .logotop{
+    display: inline;
   }
   .content{
     font-family: 'Alata', sans-serif;
@@ -454,7 +498,7 @@ body {
   .image-tab {
     display: grid;
     grid-template-columns: auto;
-    grid-row-gap: 20px;
+    grid-row-gap: 12px;
     margin-bottom: 50px;
   }
   .imgge {
