@@ -281,8 +281,17 @@ a{
     grid-row-gap: 20px;
     text-align: center;
   }
+
   .items{
     display: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .starts{
+    padding-top: 15px;
+  }
+  .ends{
+    padding-bottom: 28px;
   }
   .show {
     display:block;
