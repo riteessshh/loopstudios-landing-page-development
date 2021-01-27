@@ -19,13 +19,26 @@ body {
   display: grid;
   grid-template-columns: 700px 1fr;
 }
-.logotop{
-  display: inline;
-}
 .topbar {
   position: absolute;
   top: 0;
   padding: 5% 11% 7%;
+}
+.logotop{
+  display: inline;
+}
+.menu{
+  display: none;
+}
+.closing{
+  display: none;
+}
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  color: white;
+  text-align: center;
+  font-family: 'Alata', sans-serif;
 }
 
 .heading{
@@ -158,8 +171,21 @@ body {
     display: grid;
     grid-template-columns: 600px 1fr;
   }
+  .closing{
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
   .logotop{
     display: inline;
+  }
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    text-align: center;
+    font-family: 'Alata', sans-serif;
   }
   .heading{
     position: relative;
@@ -204,6 +230,45 @@ body {
   body{
     overflow-x: hidden;
   }
+  .logoimg {
+    width: 170px;
+  }
+  /* menu */
+  .bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  .menu{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 6px;
+
+    text-align: right;
+  }
+  .dropdown{
+    position: relative;
+    display: inline-block;
+  }
+  .content{
+    font-family: 'Alata', sans-serif;
+    position: absolute;
+    color: white;
+    background-color: black;
+    z-index: 1;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+    grid-row-gap: 20px;
+    text-align: center;
+  }
+  .items{
+    display: none;
+  }
+  .show {
+    display:block;
+  }
 
   .bgimg {
     display: none;
@@ -213,11 +278,6 @@ body {
     display: block;
     width: 100%;
     filter: brightness(65%);
-  }
-
-  .bar{
-    display: grid;
-    grid-template-columns: auto;
   }
   .logotop{
     display: inline;
@@ -358,16 +418,24 @@ body {
   }
 
   /* menu */
+  .menu{
+    display: inline-block;
+  }
   .dropdown{
     position: relative;
     display: inline-block;
   }
   .content{
-    display: block;
+    font-family: 'Alata', sans-serif;
     position: absolute;
     color: white;
     background-color: black;
     z-index: 1;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+    grid-row-gap: 20px;
+    text-align: center;
   }
   .items{
     display: none;
@@ -375,7 +443,6 @@ body {
   .show {
     display:block;
   }
-
 
   .bgimg {
     display: none;
@@ -393,14 +460,6 @@ body {
   .logotop{
     display: inline;
   }
-  /* .content{
-    font-family: 'Alata', sans-serif;
-    color: white;
-    display: grid;
-    grid-template-columns: auto;
-    grid-row-gap: 20px;
-    text-align: center;
-  } */
 
   .heading{
     position: relative;
