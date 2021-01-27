@@ -15,23 +15,38 @@ body {
 .bgmimg{
   display: none;
 }
+.bar{
+  display: grid;
+  grid-template-columns: 700px 1fr;
+}
+.logotop{
+  display: inline;
+}
+.content{
+  font-family: 'Alata', sans-serif;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* grid-row-gap: 20px; */
+  text-align: center;
+}
 .topbar {
   position: absolute;
   top: 0;
   padding: 5% 11% 7%;
 }
-.navbar{
+/* .navbar{
   font-weight: 600;
 }
 .nav-item{
   font-family: 'Alata', sans-serif;
-}
+} */
 .heading{
   position: relative;
   font-size: 5rem;
   color: white;
   top: 95px;
-  left: 10px;
+  left: 0;
   width: 58%;
   font-weight: lighter;
   padding-left: 25px;
@@ -348,6 +363,14 @@ body {
     display: block;
     width: 100%;
     filter: brightness(65%);
+  }
+  .content{
+    font-family: 'Alata', sans-serif;
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 20px;
+    text-align: center;
   }
 
   .heading{
