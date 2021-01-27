@@ -5,4 +5,4 @@ $("img.menu").click(function(){
 });
 $("img.closing").click(function(){
   $("div.items").toggle("show");
-})
+});
