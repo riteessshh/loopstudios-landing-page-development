@@ -99,6 +99,12 @@ body {
 .imge {
   position: relative;
 }
+.imagge{
+  display: none;
+}
+.buttn{
+  display: none;
+}
 .image-text {
   position: absolute;
   bottom: 20px;
@@ -115,12 +121,17 @@ body {
   background: black;
 }
 .ending{
+  font-family: 'Alata', sans-serif;
   color: white;
   padding-top: 50px;
   padding-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 20px;
+}
+.logoend{
+  position: relative;
+  left: 17px;
 }
 .ico{
   text-align: right;
@@ -130,6 +141,7 @@ body {
 }
 .lists {
   display: grid;
+  text-align: center;
   grid-template-columns: 80px 80px 80px 80px 80px;
 }
 .copyright {
@@ -137,7 +149,7 @@ body {
 }
 
 
-@media (max-width:1190px) {
+@media (max-width:1201px) {
 
   .heading{
     position: relative;
@@ -152,6 +164,27 @@ body {
     line-height: 1;
     letter-spacing: 4px;
     border: 3px solid white;
+  }
+  .midimg{
+    width: 700px;
+    margin-left: 170px;
+  }
+  .midpost {
+    position: absolute;
+    padding: 70px 30px 30px 50px;
+    width: 30%;
+    background: white;
+    bottom: 10px;
+    right: 160px;
+  }
+  .midhead {
+    font-weight: 200;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .midtext {
+    font-size: 12px;
+    padding-left: 10px;
   }
 
 }
@@ -324,8 +357,6 @@ body {
     font-size: 2.7rem;
     color: white;
     top: 190px;
-    /* height: 210px; */
-    /* left: 10px; */
     width: auto;
     font-weight: lighter;
     padding-left: 10px;
@@ -335,10 +366,16 @@ body {
     border: 3px solid white;
   }
 
+  /* middle-top */
+  .mid-top {
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+  }
   .midimg {
     position: static;
     display: block;
-    width: 400px;
+    width: 350px;
     margin: auto;
   }
   .midpost {
@@ -367,10 +404,10 @@ body {
   }
   .midbtm {
     position: relative;
-    /* left: 30px; */
+    text-align: center;
     color: black;
-    display: inline-block;
-    font-size: 3rem;
+    display: block;
+    font-size: 2rem;
     font-weight: 300;
   }
   .butn {
@@ -406,13 +443,13 @@ body {
   }
   .image-text {
     position: absolute;
-    bottom: 20px;
+    bottom: 12px;
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     font-weight: 300;
     text-align: left;
-    width: 70%;
-    left: 20px;
+    width: 45%;
+    left: 15px;
   }
 
   .ending{
